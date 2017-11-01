@@ -22,9 +22,23 @@ $(document).ready(function() {
     $("#button-new-quote").on("click", function() {
         // Random number from 0 to quotes.length
         var randomNumber = Math.floor(Math.random() * (15 - 0 + 1)) + 0;
-
+        var newQuote = quotes[randomNumber];
         // Get a new quote and add to paragraph with id of quote
-        $("#quote").html(`<p> ${quotes[randomNumber]} </p>`);
+        $("#quote").html(`<p> ${newQuote} </p>`);
+
+        var tweet = `<a class="twitter-share-button tweet"
+              href="https://twitter.com/share"
+              data-size="large"
+              data-text="${newQuote}"
+              data-url="https://jonmaldia.com/randomquotes"
+              data-hashtags="quotes,inspiration"
+              data-via="jonmaldia"
+              data-related="twitterapi,twitter">
+            Tweet
+            </a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`;
+
+        $("#tweet").html(tweet);
     });
 });
 
