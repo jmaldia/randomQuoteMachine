@@ -6,9 +6,14 @@
 	<link href="css/style.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+
+
+	<script type="text/javascript">
+		var initialQuote = "This is the initialQuote";
+	</script>
 </head>
   
-<body>
+<body onload="">
 
 	<!-- This will wrap the whole page content -->
 	<div class="wrapper">
@@ -26,7 +31,7 @@
 		<!-- This button will generate a new quote when pressed -->
 		<div id="button-wrapper">
 			<button id="button-new-quote">
-				New Quote
+				New Quote        
 			</button>
 		</div>
 
@@ -35,7 +40,7 @@
 				<a class="twitter-share-button tweet"
 				  href="https://twitter.com/share"
 				  data-size="large"
-				  data-text="custom share text"
+				  data-text="Initial Quote"
 				  data-url="https://jonmaldia.com/randomquotes"
 				  data-hashtags="quotes,inspiration"
 				  data-via="jonmaldia"
