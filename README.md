@@ -22,6 +22,4 @@ Here are the requirements:
 
 ### Screenshot
 
-Coming soon
-
 ![alt text](https://d1ax1i5f2y3x71.cloudfront.net/items/2O3Z022f3G3S3o3T043v/Image%202017-11-03%20at%209.17.02%20AM.png?X-CloudApp-Visitor-Id=657003da7136d78ee538e43736e4d9fa&v=8d1455cf "Jon Maldia Random Quote Generator Screenshot 1")
