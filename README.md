@@ -18,10 +18,10 @@ Here are the requirements:
 * AJAX
 * HTML
 * CSS
-* API Source - https://quotesondesign.com/api-v4-0/
+* API Source - https://forismatic.com/en/
 
 ### Screenshot
 
 Coming soon
 
-![alt text](https://d1ax1i5f2y3x71.cloudfront.net/items/1E2Y3v1u30182S0S3n0H/Image%202017-06-25%20at%207.25.25%20PM.png?X-CloudApp-Visitor-Id=657003da7136d78ee538e43736e4d9fa&v=51f5d6ac "Jon Maldia Portfolio Site Screenshot 1")
+![alt text](https://d1ax1i5f2y3x71.cloudfront.net/items/2O3Z022f3G3S3o3T043v/Image%202017-11-03%20at%209.17.02%20AM.png?X-CloudApp-Visitor-Id=657003da7136d78ee538e43736e4d9fa&v=8d1455cf "Jon Maldia Random Quote Generator Screenshot 1")

@@ -6,31 +6,44 @@
 	<link href="css/style.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109181346-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109181346-1');
+	</script>
+
 </head>
   
 <body onload="">
 
 	<!-- This will wrap the whole page content -->
 	<div class="wrapper">
+
+		<!-- Main image -->
+		<div class="main-img">
+			<img src="img/if_App_2638291.svg">
+		</div>
+
 		<!-- Page Header -->
 		<header>
-			<h1>Quotes to Inspire you</h1>
-			<h4>Click the button to change the quote.</h4>
+			<h3>Quotes to Inspire you</h3>
 		</header>
 		
 		<!-- This is where the quote will display	 -->
 		<section id="quote">
-			<p>This is where the quote will go</p>
 		</section>
 
 		<!-- This button will generate a new quote when pressed -->
-		<div id="button-wrapper">
+		<div id="buttons">
 			<button id="button-new-quote">
 				New Quote        
 			</button>
-		</div>
 
-		<div id="social">
 			<a id="tweet_btn" target = "_blank">
 				<button>
 					Tweet
@@ -42,8 +55,6 @@
 			</button> -->
 		</div>
 	</div>
-
-</body>
 
 </body>
 
