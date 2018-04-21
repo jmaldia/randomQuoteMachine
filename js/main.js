@@ -10,11 +10,11 @@ $(document).ready(function() {
 
     // Function to update the quotes on the tweet and on the page
     function update(response) {
-      var randomQuote = JSON.stringify(response.quoteText);
+      var randomQuote = JSON.stringify(response.quoteText).replace(/["]+/g, '');
       var randomQuoteAuthor = '';
       
       if (response.quoteAuthor) {
-        randomQuoteAuthor = JSON.stringify(response.quoteAuthor);
+        randomQuoteAuthor = JSON.stringify(response.quoteAuthor).replace(/["]+/g, '');
       } else {
         randomQuoteAuthor = "Anonymous";
       }
@@ -23,7 +23,7 @@ $(document).ready(function() {
       // Updates the page quote
       $('#quote').html('<section id="quote"><h1>' + randomQuote + '</section></h1><p id="author">' + randomQuoteAuthor + '</p>');
       // Updates the twitter URL with current quote
-      $('#tweet_btn').attr('href', 'https://twitter.com/intent/tweet?text=' + randomQuote + '&via=jonmaldia&url=http%3A%2F%2Fbit.ly%2Fjonquotes&hashtags=quotes%2Cinspiration' + "%0a-" + randomQuoteAuthor);
+      $('#tweet_btn').attr('href', 'https://twitter.com/intent/tweet?text=' + randomQuote + '%20-%20' + randomQuoteAuthor + '&via=jonmaldia&url=http%3A%2F%2Fbit.ly%2Fjonquotes&hashtags=quotes%2Cinspiration%0a');
     }
 
     // Error handler
